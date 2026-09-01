@@ -1,13 +1,15 @@
 const prompt = require('prompt-sync')();
 
-let fname = prompt("vouillez entrer le nom du film : ");
 let duree = prompt("vouillez enter la durée du film en minute : ");
 let categorie = ["Court métrage", "Film standard", "Film long"];
 
 if (duree <60 ) {
-    console.log(`le film ${fname} est : ${categorie[0]}`);
+    console.log("duree : " + duree + " minutes" + 
+        "\ncategorie : " + categorie[0]);
 } else if (duree > 60 && duree < 120) {
-    console.log(`le film ${fname} est : ${categorie[1]}`);
+    console.log("   duree : " + duree + " minutes" + 
+        "\ncategorie : " + categorie[1]);
 } else {
-    console.log(`le film ${fname} est : ${categorie[2]}`);
+    console.log("duree : " + duree + " minutes" + 
+        "\ncategorie : " + categorie[2]);
 }
