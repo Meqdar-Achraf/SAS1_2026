@@ -2,7 +2,8 @@ const prompt = require('prompt-sync')();
 
 let start = prompt("debut : ");
 let end = prompt("Fin : ");
- 
+let somme = 0;
+
 for ( let i = start ; i < end ; i++ ){
     // console.log(i)
     let k = 0 ;
@@ -10,6 +11,10 @@ for ( let i = start ; i < end ; i++ ){
         if (i % j == 0) k++
   
     }
-    k  != 0 ? true :  console.log(i);    
+    if (k === 0){ 
+        console.log(i); 
+        somme+= i
+    }
+       
 }
-
+console.log(`somme : ${somme}`)
