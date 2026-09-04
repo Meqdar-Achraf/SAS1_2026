@@ -1,6 +1,4 @@
 
-const prompt = require('prompt-sync')();
-
 function compterCaracteres(chaine) {
     let i = 0
     
