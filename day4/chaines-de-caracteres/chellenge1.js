@@ -1,4 +1,5 @@
 
+
 function compterCaracteres(chaine) {
     let i = 0
     
