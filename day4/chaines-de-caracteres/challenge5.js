@@ -11,7 +11,7 @@ function estPalindrome(chaine){
         }
     }
     let inverse=reverse.join("")
-    chaine == inverse ? console.log(`${chaine} --> palindrome`) : console.log(`${chaine} --> pas palindrome`);
+    console.log(chaine == inverse)
 }
 
 let word = prompt("entrez un mots : ");
